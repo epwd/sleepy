@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sleepy - web service</title>
+  <script type="text/javascript" src="public/lib/js/jquery.min.js"></script>
+  <script type="text/javascript" src="public/lib/js/jquery.json-viewer.js"></script>
+  <script type="text/javascript" src="public/js/ajax.js"></script>
+  <link href="public/lib/css/jquery.json-viewer.css" rel="stylesheet" media="screen">
+  <link href="public/css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  <h3>Sleepy - web service</h3>
+  <label>Max Time Request(sec.):</label>
+  <input id="max-time-request" type="text" name="max-time-request">
+  <label>Fake URLS:</label>
+  <textarea id="urls"></textarea>
+  <button id="sleepy" onclick="return func('sleepy')">Do Requests Sleepy</button>
+  <label>Result request (JSON): </label>
+  <div id="json">
+    <pre id="json-renderer"></pre>
+  </div>
+</body>
+</html>
